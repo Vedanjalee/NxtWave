@@ -5,7 +5,7 @@
   }
   
   .sidebar {
-    /* flex: 1 1 20%; */
+    
     min-width: 200px;
   }
 
@@ -37,7 +37,7 @@
   }
 
 
-  /* //signin screen css */
+  
   .container {
     padding: 2rem;
     max-width: 400px;

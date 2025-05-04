@@ -16,6 +16,13 @@ const Header = () => {
   return (
     <header className={styles.headerWrapper}>
       {/* Top Bar: Logo center, icons right */}
+      <div className={styles.topBarWrapper}>
+        <div className={styles.topBarBackground} />
+        <div>Lorem ipsum dolor</div>
+        <div>Lorem ipsum dolor</div>
+        <div>Lorem ipsum dolor</div> 
+        <div>Lorem ipsum dolor</div>
+      </div>
       <div className={styles.topBar}>
         <div className={styles.logo}>LOGO</div>
         <div className={styles.iconGroup}>

@@ -23,9 +23,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
       <div className={styles.info}>
         <h2 className={styles.title}>{title}</h2>
         <p className={styles.productDesc}>{title}</p>
-        {/* <p className={styles.price}>${price.toFixed(2)}</p>
-        <p className={styles.rating}>{rating.rate} ({rating.count})</p>
-        <p className={styles.color}>Color: {color}</p> */}
+        
       </div>
     </article>
   );

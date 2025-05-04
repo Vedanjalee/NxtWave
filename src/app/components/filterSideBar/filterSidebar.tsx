@@ -61,7 +61,7 @@ const FilterSection = ({ title, options, selected, onChange }: FilterSectionProp
   );
 };
 
-const FilterSidebar = () => {
+const FilterSidebar = ({ filters, onFilterChange, allCategories }: FilterSidebarProps) => {
   const [customizable, setCustomizable] = useState(false);
   const [selectedFilters, setSelectedFilters] = useState<Record<string, string[]>>({
     idealFor: [],

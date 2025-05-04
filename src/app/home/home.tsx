@@ -1,6 +1,6 @@
-// app/home/home.tsx
 
-'use client'; // Add this line at the top
+
+'use client'; 
 
 import React, { useState } from 'react';
 import Header from '../components/header/header';
@@ -16,7 +16,7 @@ type Product = {
   image: string;
   rating: { rate: number; count: number };
   color?: string;
-  category: string; // Added category property
+  category: string; 
 };
 
 const getFilteredProducts = (products: Product[], filters: Filters) => {
@@ -26,7 +26,7 @@ const getFilteredProducts = (products: Product[], filters: Filters) => {
     const inPrice =
       product.price >= filters.priceRange[0] &&
       product.price <= filters.priceRange[1];
-    const inColor = !filters.color || filters.color === product.color; // placeholder logic
+    const inColor = !filters.color || filters.color === product.color; 
     return inCategory && inPrice && inColor;
   });
 };
@@ -51,8 +51,12 @@ const Home = ({ products }: { products: Product[] }) => {
         return a.price - b.price;
       case 'customer-rating':
         return b.rating.rate - a.rating.rate;
+        case 'Newest-First':
+          return b.rating.rate - a.rating.rate;  
+          case 'popular':
+            return b.rating.rate - a.rating.rate;  
       default:
-        return 0; // Default is 'recommended', no sorting applied
+        return 0; 
     }
   });
 
@@ -79,6 +83,8 @@ const Home = ({ products }: { products: Product[] }) => {
               <option value="price-high-to-low">Price: High to Low</option>
               <option value="price-low-to-high">Price: Low to High</option>
               <option value="customer-rating">Customer Rating</option>
+              <option value="Newest-First">Newest-First</option>
+              <option value="popular">popular</option>
             </select>
           </div>
 
