@@ -1,0 +1,84 @@
+.footer {
+  background-color: #232f3e;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 40px 20px 20px;
+}
+
+.subscribeSection {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.subscribeText {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.inputGroup {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.inputGroup input {
+  padding: 10px;
+  width: 250px;
+  border: none;
+  border-radius: 2px;
+  font-size: 0.9rem;
+}
+
+.inputGroup button {
+  background-color: #febd69;
+  border: none;
+  padding: 10px 16px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.linkSection {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  border-top: 1px solid #3a4553;
+  border-bottom: 1px solid #3a4553;
+}
+
+.column {
+  min-width: 180px;
+  margin: 20px 0;
+}
+
+.column h4 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.column li {
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+  cursor: pointer;
+  color: #dddddd;
+}
+
+.column li:hover {
+  text-decoration: underline;
+}
+
+.bottomBar {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 0.8rem;
+  color: #999;
+}

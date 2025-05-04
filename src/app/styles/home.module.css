@@ -1,0 +1,93 @@
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .sidebar {
+    /* flex: 1 1 20%; */
+    min-width: 200px;
+  }
+
+  .productSection {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .productHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .filterDropdown {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  
+  .productList {
+    flex: 1 1 75%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+
+  /* //signin screen css */
+  .container {
+    padding: 2rem;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .error {
+    border-color: red;
+    background-color: #ffecec;
+  }
+  
+  .button {
+    padding: 0.8rem;
+    background-color: #111827;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .errorText {
+    color: red;
+    margin-top: 0.5rem;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .main {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      order: 2;
+    }
+  
+    .productList {
+      order: 1;
+    }
+  }
+  

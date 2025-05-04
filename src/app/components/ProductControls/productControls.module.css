@@ -1,0 +1,46 @@
+.controlsWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 15px 30px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .leftSection {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .itemCount {
+    font-weight: 600;
+    font-size: 13px;
+  }
+  
+  .filterToggle {
+    background: none;
+    border: none;
+    color: #999;
+    font-size: 13px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+  }
+  
+  .arrow {
+    margin-right: 5px;
+    font-size: 12px;
+  }
+  
+  .sortDropdown select {
+    padding: 4px 8px;
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  

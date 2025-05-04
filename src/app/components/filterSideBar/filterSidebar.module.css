@@ -1,0 +1,103 @@
+/*.sidebar {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.filterSection {
+  margin-bottom: 20px;
+}
+
+.filterHeader {
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+.filterHeader:after {
+  content: '▼'; 
+  font-size: 12px;
+  margin-left: 8px;
+  position: absolute;
+  right: 0;
+  color: #555;
+}
+
+.filterHeader.open:after {
+  content: '▲'; 
+}
+.filterHeader:hover {
+  background-color: #f0f0f0;
+}
+
+.filterOptions {
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.filterOption {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.filterOption input {
+  margin-right: 10px;
+}
+
+*/
+
+.sidebar {
+  width: 100%;
+  padding: 1rem;
+  font-size: 14px;
+  color: #222;
+}
+
+.filterSection {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+}
+
+.filterHeader {
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.filterOptions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.filterOption {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.subLabel {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 0.25rem;
+}
+
+.unselect {
+  font-size: 12px;
+  color: #0066c0;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  text-decoration: underline;
+}
